@@ -1,20 +1,20 @@
-# Kickstarting with Excel
+# Stock Analysis
 
 ## Overview of Project
 
-	Louise has got numerous data points about how different campaigns fared over the years in different countries along with the 
-	dates, goals, outcomes and its respective categories. 
-	He/She wants to visualize campaign outcomes based on their 
-		a. launch dates and 
-		b. funding goals
+	Steve has got two years of stock data for numerous tickers. He want to anayze the yearly stock performance
+	for multiple tickers (companies) to determine best and 	worst performing stocks for years 2017 and 2018 at 
+	the click of a button without losing too much time, not using exel funtions which is time sonsuming.  .
+	
+	Steve should be able to run the stock analysis not only for years 2017 or 2018 but more. If more data is added 
+	to the worksheet with more tickers for another year, only the button click wil be enough to run the analysis 
+	and present the data in tabular format for each year.
 
 ### Purpose
 
-	The pupose of the analysis is to draw conclusions based on the campaign data available to 
-		a. understand what were the best and worst performing months based on launch dates over the years in all 
-		or a selected category.
-		b. determine which funding targets (goals) were most successful, failure or canceled for the campaign 
-		whose subcategory was "Plays" 
+	The pupose of the analysis is to draw conclusions based on yearly perfomance of stocks to identify
+		a. stocks to invest
+		b. stocks to sell
 
 ## Analysis and Challenges
 	
