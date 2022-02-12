@@ -1,22 +1,84 @@
-# Stock Analysis
+# Stock Analysis with VBA
 
 ## Overview of Project
-
 	Steve has got two years of stock data for numerous tickers. He want to anayze the yearly stock performance
-	for multiple tickers (companies) to determine best and 	worst performing stocks for years 2017 and 2018 at 
-	the click of a button without losing too much time, not using exel funtions which is time sonsuming.  .
+	for multiple tickers (companies) to determine best and worst performing stocks for years 2017 and 2018 at 
+	the click of the button withpout losing any time, not using exel funtions which is time sonsuming.  
 	
 	Steve should be able to run the stock analysis not only for years 2017 or 2018 but more. If more data is added 
 	to the worksheet with more tickers for another year, only the button click wil be enough to run the analysis 
-	and present the data in tabular format for each year.
+	and present the data in tabular format for each year. The VBS code should also display the time taken to proces the data
+	for each year.
 
 ### Purpose
+	The pupose of the project is to refactor the VBA code we have been using to learn loops, conditions, arrays etc. in VBA 
+	to make it more efficient—by taking fewer steps, using less memory, and improving the logic of the code. 		
 
-	The pupose of the analysis is to draw conclusions based on yearly perfomance of stocks to identify
-		a. stocks to invest
-		b. stocks to sell
+### Results
 
-## Analysis and Challenges
+### Using the worksheet to run the analysis.
+	User would need to open the VBA_Challenge.xlms sheet and go to "AllStockAnalysis" sheet, provide a year and run the
+	stock anaylsis. User is required to click on "Run Stock Analysis" button and the provide the year.
+	
+#### Image - All Stock Anaylsis Sheet
+![VBA_Challenge_Initial Scree](https://user-images.githubusercontent.com/98173091/153690032-9a7ec62a-43b6-49f2-8df2-1535f9ac98fa.png)
+	
+	Click on the "Run Stock Analysis" button and provide year 2015 or 2016. (NOT 2017 or 2018), it should return a error message
+#### Image - Wrong Input
+![VBA_Challenge_Input_Wrong_year](https://user-images.githubusercontent.com/98173091/153690318-9b276073-360f-4e51-b48b-795220eb058b.png)
+
+#### Image - Error Mesasge if year provided is not in the workbook
+![VBA_Challenge_Error_Message](https://user-images.githubusercontent.com/98173091/153690342-c3d790bf-c332-4c6c-84ba-dd8c7531656e.png)
+
+### Stock Analysis for the Year 2017
+	
+	Year 2017 was quite good for investors who invested in any of the stocks from the list except for "TERP". 
+	The average return for 2017 was 67.3%, with SEDG and DQ best performing stocks.
+	To run the stock analysis, Click on Run Stock Analysis button and provide the year 2017 in the input box.
+	
+### Image - Providing year 2017 as Input 	
+![VBA_Challenge_Input_Pop_up](https://user-images.githubusercontent.com/98173091/153690863-5ce974be-3c5d-46be-aa1a-eab15c772926.png)
+
+### Image - Output after the stock anaylis code executed for year 2017
+![VBA-Challenge_2017_Analysis](https://user-images.githubusercontent.com/98173091/153690899-1f5b8cc5-6070-40e6-b85f-eb3f582951b5.png)
+
+### Image - Clearing 2017 Analysis Data
+	Before running the stock analysis for year 2018, we would like to clear the data for year 2017 .
+	To clear the data user need to click on "Clear" button,
+![VBA-CHallenge_Clear_Cells](https://user-images.githubusercontent.com/98173091/153691029-35ca13ac-c786-4863-b337-be79b686f0c7.png)
+
+
+### Stock Analysis for the Year 2018
+	After running the analysis for Year 2017 and clering the data, run the stock analysis for the 2018. 
+	The average return for 2018 was -8.5%, with ENPH and RUN best performing stocks.
+	To run the stock analysis, Click on Run Stock Analysis button and provide the year 2018 in the input box.
+	
+### Image - Providing year 2018 as Input 	
+![VBA_Challenge_Input_2018](https://user-images.githubusercontent.com/98173091/153727397-f61dc1aa-a53f-4d58-8d2f-5944922d07d8.png)
+
+
+### Image - Output after the stock anaylis code executed for year 2018
+![VBA-Challenge_2018_Analysis](https://user-images.githubusercontent.com/98173091/153727415-30de9d36-54b3-4015-8fbc-0b823c2ed2b0.png)
+
+## Code Analysis
+	Code Analysis section will describe the sections of the code written to achieve specific goal. It will have multiple 
+	sections detailing what each piece of code is doing.	
+	
+### Code for checking the year provided and returning the error message.
+	To return the error, I used the loop to check the input year against the name of all the sheets in 
+	the Workbook and if there's no matching name found then return the error messge exit out of the code.
+	Check the in-line comments for the logic behind teh code
+### Image - VBS Code for Error Checking
+![VBA_Year Check Erro Message](https://user-images.githubusercontent.com/98173091/153690612-c12af768-3ebe-4080-a0fa-bac317189669.png)
+
+### Code for 
+
+
+
+
+	Year 2017 was quite good for investors who invested in any of the stocks from the list except for "TERP". 
+	The average return for 2017 was 67.3%, with SEDG and DQ best performing stocks.
+
 	
 	After the intial analysis of the data it appeared to be just a stored data not providing much of intelligent 
 	or actionable information. 
@@ -39,7 +101,12 @@
 ![PIVOTAREAS](https://user-images.githubusercontent.com/98173091/152464601-34699487-0565-4667-9a07-73d7ee0221c6.png)
 
 
-### Analysis of Outcomes Based on Launch Date
+### Code for checking the year provided and returning the error message.
+	To return the error, I used the loop to check the input year against the name of all the sheets in 
+	the Workbook and if there's no matching name found then return the error messge exit out of the code.
+	Check the in-line comments for the logic behind teh code
+### Image - VBS Code for Error Checking
+
 
 	The pivot table for outcomes based on launch dates was easy to draw from the parent sheet "Kickstarter". Only thing we need to do 
 	was select and add the appropriate columns into the folowing pivot table areas
