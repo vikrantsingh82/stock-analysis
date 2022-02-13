@@ -132,8 +132,7 @@
 	header names appear in Bold.
 	In addition to this, i merged the three columns and colored it in yello for the top row "All Stocks (year)"
 ![VBA_Challenge_Formatting](https://user-images.githubusercontent.com/98173091/153733589-f83996f2-4a93-4596-a21a-f827033e0878.png)
-
-## Code Analysis - Completed
+### Code Analysis - Completed
 
 ## Summary
 	After refactoring the code we used for learning loops, arrays and conditions, we can clearly see the performance 
